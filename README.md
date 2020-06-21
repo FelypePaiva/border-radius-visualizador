@@ -13,4 +13,4 @@ Implementação da [ideia](https://github.com/florinpop17/app-ideas/blob/master/
 # Compatibilidade
 O sistema utiliza os pseudo-elementos css `::-webkit-slider-thumb` e `::-webkit-slider-runnable-track` os quais utilizam o prefixo `-webkit`, sendo assim ele somente apresentará o resultado desejado em navegadores Safari e Chrome em suas versões mais atualizadas.
 
-[Visualize em seu navegador](https://felypepaiva.github.io/border-radius-visualizador/)
+[Visualize em seu navegador](https://felypepaiva.github.io/visualizador-border-radius/)
