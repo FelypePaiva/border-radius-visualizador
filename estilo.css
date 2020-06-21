@@ -1,0 +1,58 @@
+/*Reset*/
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --tamanho:400px;
+  --tamanhoNegativo:0px;
+}
+/*conteiner*/
+.conteiner{
+  
+  max-width:1000px;
+  margin:0;
+  padding:100px;
+}
+/*Box que será alterada*/
+#range{
+  width:var(--tamanho);
+  height:var(--tamanho);
+  border:10px solid #ddf;
+  background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/17_05_a_amur_leopard_18.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  
+}
+input[type="range"]{
+  width:var(--tamanho);
+  margin:0;
+  padding:0;
+  display:block;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+  height:0;
+}
+input[type="range"]::-webkit-slider-thumb{
+  margin:0;
+  padding:0;
+}
+input[type="range"]:nth-child(2)::-webkit-slider-thumb{
+  transform:translateY(-100%);
+}
+input[type="range"]:nth-child(2)::-webkit-slider-runnable-track{
+  transform: rotate(180deg) translateY(100%);
+  transform-origin: center;
+}
+.rangeRight{
+  transform:translateX(var(--tamanho)) rotate(270deg);
+  transform-origin: bottom left;
+}
+.rangeLeft{
+  transform:translateX(var(--tamanhoNegativo)) rotate(90deg);
+  transform-origin:top left;
+}
+#valores{
+  padding-top:100px;
+}
+.floatLeft{float:left;}
+.floatRight{float:right;}

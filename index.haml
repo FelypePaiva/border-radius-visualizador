@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %link(rel="stylesheet" href="estilo.css")
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
+  %body
+    .conteiner.floatLeft
+      .rangeTop
+        %input.range(type="range" min="0" max="100" value="0" data-index="0" oninput="atualizarDados(this)")
+        %input.range(type="range" min="0" max="100" value="0" data-index="1" oninput="atualizarDados(this)")
+      .rangeLeft
+        %input.range(type="range" min="0" max="100" value="0" data-index="4" oninput="atualizarDados(this)")
+        %input.range(type="range" min="0" max="100" value="0" data-index="3" oninput="atualizarDados(this)")
+      #range
+      .rangeRight
+        %input.range(type="range" min="0" max="100" value="0" data-index="2" oninput="atualizarDados(this)")
+        %input.range(type="range" min="0" max="100" value="0" data-index="5" oninput="atualizarDados(this)")
+      .rangeBottom
+        %input.range(type="range" min="0" max="100" value="0" data-index="7" oninput="atualizarDados(this)")
+        %input.range(type="range" min="0" max="100" value="0" data-index="6" oninput="atualizarDados(this)")
+    #valores.floatLeft
+      %h1 Valores do Border Radius
+      %p border-radius : 0 0 0 0 / 0 0 0 0;
+    %script(src="principal.js")
